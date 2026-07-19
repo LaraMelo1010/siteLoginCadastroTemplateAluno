@@ -27,6 +27,16 @@ body{
   position: relative;
   z-index: 1;
 }
+.login h2{
+  font-size: 2em;
+  color: aliceblue;
+}
+.login .inputBx input::placeholder{
+  color: #555;
+}
+.button button:hover{
+  background: #FF0000;
+}
 
 /*Estilo da imagem logo*/
 .logo {
@@ -37,7 +47,7 @@ body{
 }
 
 /* Estilo para o pseudo-elemento ::before do elemento com a classe container */
-.container::before { 
+.container .container1 ::before { 
   content: "";  /*cria um conteúdo vazio antes do conteúdo real do elemento*/
   position: absolute; /*usamos para colocar esta camada exatamente no lugar certo dentro da nossa caixa */
   top: 0;
@@ -49,7 +59,32 @@ body{
   z-index: 0; 
 }
 
+.login h3{
+  color: #FFF;
+}
 
+.Page{
+  background: #1E1E1E;
+  color: #FFF;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container1{
+  width: 300px;
+  text-align: center;
+}
+
+.logo{
+  width: 140px;
+  margin-bottom: 5px;
+}
+.container h3 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
 
 .login {
   display: flex; 
@@ -81,7 +116,11 @@ body{
   color: #fff; 
 }
 
-
+.beneficios p {
+  color: #FFF;
+  line-height: 1.6;
+  margin: 18px;
+}
 
 .button {
   width: 100%; 
@@ -90,14 +129,35 @@ body{
   align-items: center; 
 }
 
+.btn-outline{
+  width: 100%;
+  padding: 15px;
+  background-color: transparent;
+  border: 3px solid #FFF;
+  color: #FFF;
+  cursor: pointer;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  border-radius: 10px; 
+}
+
+.singin{
+  margin-top: 30px;
+}
+
+.singin a{
+  color: aliceblue;
+  font-weight: bold;
+}
+
 .button button {
   width: 100%;
   padding: 12px 20px;
-  background: linear-gradient(to right, #000, #555); 
+  background: #FF0000;
   border: none;
   border-radius: 10px; 
   font-size: 1.2em;
-  color: #000; 
+  color: #FFF; 
   font-weight: 900;
   cursor: pointer; 
   transition: background-color 0.3s ease; 
